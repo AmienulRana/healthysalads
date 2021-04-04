@@ -1,0 +1,70 @@
+.col-desain-hp {
+  height: 546px !important;
+}
+.silang:active {
+  opacity: 0.5;
+}
+.silang {
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.col-food-detail {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  background: rgb(251, 251, 251);
+  border-radius: 20px;
+  padding: 10px 10px 0;
+  height: 85% !important;
+  overflow-y: scroll;
+  transition: 0.3s;
+  top: 600px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+}
+.col-food-detail::-webkit-scrollbar {
+  width: 0;
+}
+.col-food-detail.munculkan {
+  top: 85px !important;
+  transition: 0.3s !important;
+}
+.col-img-detail {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+}
+.row-food-detail button.keranjang {
+  position: relative;
+}
+h3.nama-menu {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+}
+h5.harga-detail {
+  font-size: 17px !important;
+  line-height: 5px !important;
+}
+span.jumlah-keranjang {
+  width: 25px;
+  height: 25px;
+  background: rgb(221, 7, 0);
+  border-radius: 50%;
+  position: absolute;
+  top: -13px;
+  right: 22px;
+}
+span.jumlah-keranjang p {
+  line-height: 25px;
+  text-align: center;
+  font-family: arial !important;
+  font-weight: bold;
+  color: black;
+}
+
+@media (max-width: 575.98px) {
+  .col-desain-hp,
+  .food-detail {
+    margin: auto;
+  }
+}

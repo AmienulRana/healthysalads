@@ -1,0 +1,31 @@
+body {
+  overflow-x: hidden;
+}
+.fade-up {
+  transform: translateY(120px);
+  opacity: 0;
+  transition: 0.9s ease-out;
+}
+.up {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 0.9s;
+}
+.fade-right {
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 0.9s ease-in-out;
+}
+.right {
+  transform: translateX(0);
+  opacity: 1;
+}
+.fade-left {
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: 0.9s ease-in-out;
+}
+.left {
+  transform: translateX(0);
+  opacity: 1;
+}

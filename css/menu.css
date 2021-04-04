@@ -1,0 +1,130 @@
+section.menu {
+  font-family: "Montserrat", sans-serif;
+}
+section.menu .bg-menu {
+  background: white;
+  width: 80% !important;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+section.menu img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section.menu h4.nama-makanan {
+  font-size: 17px;
+  font-weight: bold;
+}
+section.menu p.kategori {
+  font-size: 13px;
+  line-height: 7px;
+}
+section.menu h5.harga {
+  margin-top: 4px;
+  font-size: 15px;
+}
+section.menu .nama-makanan-kategori {
+  position: absolute;
+  width: 100%;
+}
+section.menu .cart {
+  width: 50px;
+  height: 50px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  border-radius: 10px 5px 35px 10px;
+  transform: translate(-25px, 55px);
+}
+section.menu button.btn-like {
+  height: 30px;
+  width: 30px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+section.menu p.suka ion-icon {
+  color: rgb(255, 255, 255);
+  font-weight: 700 !important;
+  transform: translate(-13.5px, -10px);
+}
+
+@media (max-width: 575.98px) {
+  section.menu .bg-menu {
+    height: 220px;
+    margin: 0 30px;
+    border-radius: 20px;
+  }
+  section.menu .bg-menu:nth-child(2) {
+    margin-top: 70px;
+    transform: translateX(115px);
+  }
+  section.menu img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: auto !important;
+    transform: translate(1px, -70px);
+  }
+  section.menu .nama-makanan-kategori {
+    bottom: 30px;
+  }
+  section.menu h4.nama-makanan {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  section.menu p.kategori {
+    font-size: 11px;
+    line-height: 7px;
+  }
+  section.menu h5.harga {
+    margin-top: 4px;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  section#menu {
+    display: none !important;
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  section.menu {
+    margin-top: 210px !important;
+  }
+  section.menu .bg-menu {
+    height: 250px;
+  }
+  section.menu .bg-menu:nth-child(2) {
+    margin-top: 80px;
+  }
+  section.menu img {
+    transform: translate(0, -80px);
+  }
+  section.menu .nama-makanan-kategori {
+    bottom: 30px;
+  }
+}
+@media (min-width: 991.98px) {
+  section.menu {
+    margin-top: 250px !important;
+  }
+  section.menu .bg-menu {
+    height: 270px;
+  }
+  section.menu img {
+    top: -130px;
+    margin: auto;
+    display: block;
+  }
+  section.menu .nama-makanan-kategori {
+    bottom: 30px;
+  }
+}

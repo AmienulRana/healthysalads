@@ -1,0 +1,482 @@
+body {
+  background: #f8f8f8;
+}
+ul li {
+  list-style: none;
+}
+button {
+  outline: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(129, 129, 129);
+}
+h2,
+footer .container h3 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+}
+h5 {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+button:hover {
+  color: white !important;
+}
+header .container p,
+footer .container .brand p {
+  font-size: 12px;
+  transform: translateY(-15px);
+}
+section.banner button {
+  color: white;
+  font-weight: 600;
+  background: black;
+  width: 160px;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 30px 30px 0 30px !important;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.4) !important;
+}
+section.banner img {
+  border-radius: 40px 40px 0 40px;
+  display: block;
+}
+section.banner .col-img-banner {
+  position: relative;
+  overflow: hidden;
+}
+section.banner .col-img-banner::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background: #f8f8f8;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  animation: animate1 3s ease-in;
+  animation-fill-mode: forwards;
+}
+section.banner .col-img-banner::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  background: #f8f8f8;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  animation: animate2 3s ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes animate1 {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -1000px;
+  }
+}
+@keyframes animate2 {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -1000px;
+  }
+}
+
+section.promosi img,
+section.chef img {
+  border-radius: 35px 35px 35px 0;
+}
+section.aplikasi .row.baris-jam p {
+  font-weight: bold;
+  color: black;
+  font-size: 11px !important;
+}
+section.aplikasi .row.baris-jam .col ion-icon {
+  width: 14px;
+  height: 14px;
+  /* transform: translateX(620%); */
+}
+.container-aplikasi {
+  position: relative !important;
+}
+section.aplikasi .desain-hp {
+  padding: 10px 10px 0;
+}
+section.aplikasi div.hamburger span:nth-child(1) {
+  width: 30px !important;
+  height: 4px !important;
+  background: black !important;
+  position: absolute;
+  border-radius: 2px;
+}
+section.aplikasi div.hamburger span:nth-child(2) {
+  width: 20px !important;
+  height: 4px !important;
+  background: black !important;
+  position: absolute;
+  top: 6px;
+  border-radius: 2px;
+}
+.row-menu {
+  height: 290px;
+  overflow-y: scroll !important;
+  transition: 0.2s;
+}
+.row-menu.aktif {
+  opacity: 0.7;
+}
+.row-menu::-webkit-scrollbar {
+  width: 0;
+}
+.row-menu .img-app:hover {
+  cursor: pointer;
+}
+.col-desain-hp {
+  height: max-content !important;
+  overflow: hidden;
+}
+.col-desain-hp h4 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+}
+section.aplikasi .container div.col-desain-hp,
+.food-detail {
+  background: rgb(251, 251, 251);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 30px 30px 20px 20px;
+}
+section.aplikasi .container div.desain-hp .col span {
+  height: 3px;
+  width: 27px;
+  background: black;
+  display: block;
+}
+section.aplikasi .container div.desain-hp .col span:nth-child(2) {
+  width: 19px !important;
+}
+ion-icon {
+  width: 27px;
+  height: 25px;
+}
+section.aplikasi .container .desain-hp div.col-3 ion-icon {
+  transform: translateX(100%);
+}
+section.aplikasi .container .row.kategori div {
+  background: #f8f8f8;
+  border-radius: 17px;
+  padding: 2px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+section.aplikasi .container .row.kategori div.aktif {
+  background: black;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  transition: 1.2s;
+}
+section.aplikasi .container .row.kategori div.aktif::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  animation: animateKategori 0.2s ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes animateKategori {
+  0% {
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    background: rgb(179, 179, 179);
+    border-radius: 50%;
+    opacity: 0.7;
+  }
+  95% {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(179, 179, 179);
+    opacity: 0.7;
+  }
+  100% {
+    z-index: -1;
+  }
+}
+
+section.aplikasi .container .row.kategori div h6 {
+  text-align: center;
+  transform: translateY(15%);
+  font-size: 12px;
+}
+section.aplikasi .container .row h5 {
+  font-size: 12px;
+}
+section.aplikasi .container .row p {
+  font-size: 14px;
+}
+button.button-tambah {
+  cursor: pointer;
+  border: 2px solid black !important;
+  /* padding: 0 !important; */
+  /* margin: 0 !important; */
+  border-radius: 15px 15px 15px 0;
+  color: black;
+  width: 70px;
+  height: 30px;
+  background: rgb(251, 251, 251);
+}
+
+section.aplikasi .container .row button:hover h6 {
+  color: black;
+}
+section.aplikasi .container .row button h6 {
+  text-align: center;
+  line-height: 25px;
+}
+section.aplikasi .container hr {
+  margin: 0 !important;
+  margin-top: 5px !important;
+}
+.row.icon-login {
+  background: black;
+  color: white;
+  padding: 5px 0;
+  align-self: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+button.btn-dark.quanty {
+  border-radius: 5px;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: white;
+  background: black;
+  width: 30px;
+  height: 25px;
+}
+button.btn-dark.quanty p {
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 18px !important;
+}
+button.quanty p {
+  color: white;
+}
+button.keranjang {
+  width: 50px;
+  height: 50px;
+  border-radius: 11px;
+  transform: rotate(135deg);
+  background: black;
+}
+button.keranjang ion-icon {
+  transform: rotate(-135deg) translateX(-2px) !important;
+  line-height: 50px;
+  margin: auto;
+  color: white;
+}
+.container.order button {
+  color: white;
+  font-weight: 600;
+  background: black;
+  width: 160px;
+  padding: 8px;
+  border-radius: 0 30px 30px 30px !important;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.4) !important;
+}
+footer .container p {
+  line-height: 14px;
+}
+footer p a {
+  color: rgb(129, 129, 129);
+}
+p.desain a {
+  color: rgb(129, 129, 129);
+}
+
+/* responsive */
+@media (max-width: 575.98px) {
+  body h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  section.banner img {
+    display: none;
+  }
+  section.banner .row p {
+    margin-top: 13px;
+  }
+  section.menu {
+    display: block;
+  }
+  .menu-salad {
+    margin: 50px auto 0;
+  }
+  .menu-salad .col-5 img {
+    width: 130px;
+    display: block;
+    margin: auto;
+  }
+  section.menu .kata-promosi {
+    margin-top: 50px;
+  }
+  section.promosi {
+    margin-top: 100px;
+  }
+  .img-alpukat {
+    margin: 0 !important;
+  }
+  section.chef .container .col-img-chef {
+    margin: 0 auto;
+  }
+  section.chef .container h2 {
+    line-height: 27px;
+    margin-top: 25px;
+  }
+  section.aplikasi {
+    margin: auto;
+  }
+  section.aplikasi .container h2 {
+    margin-top: 25px;
+  }
+  section.aplikasi .container p.mb-5 {
+    margin-top: 20px !important;
+  }
+  .container.order {
+    margin-top: 170px;
+  }
+  .container.order button {
+    margin-top: 25px;
+  }
+  footer .container .brand {
+    display: none;
+  }
+  footer h2 {
+    margin-top: 25px;
+  }
+  p.desain {
+    margin-top: 27px;
+  }
+  p.desain a {
+    color: rgb(95, 95, 95);
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body h2 {
+    font-size: 26px;
+  }
+
+  .kata-promosi h2,
+  section.chef h2,
+  section.aplikasi h2 {
+    margin-top: 55px;
+  }
+  section.banner img {
+    border-radius: 20px !important;
+  }
+
+  section.menu,
+  section.promosi,
+  section.chef,
+  section.aplikasi,
+  .container.order {
+    margin-top: 150px !important;
+  }
+  section.aplikasi .col-sm-12 img {
+    display: block;
+    margin: auto;
+  }
+  footer {
+    margin-top: 120px;
+  }
+  footer h2:nth-child(2),
+  footer h2:nth-child(3) {
+    background: red;
+    margin-top: 25px;
+  }
+  footer .footer-company,
+  .footer-addres {
+    margin-top: 24px;
+  }
+  p.desain {
+    margin-top: 50px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991.98px) {
+  body h2 {
+    font-size: 26px;
+  }
+  section.menu,
+  section.promosi,
+  section.chef,
+  section.aplikasi,
+  .container.order {
+    margin-top: 150px !important;
+  }
+  section img.img-menu {
+    position: absolute;
+    transform: translate(-5%, -30%);
+    top: 0;
+    left: 0;
+  }
+  .order button {
+    margin-top: 25px;
+  }
+  footer .brand {
+    display: none;
+  }
+  footer {
+    margin-top: 150px;
+  }
+  p.desain {
+    margin-top: 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 991.98px) {
+  section.banner img {
+    display: block;
+  }
+  section.promosi {
+    margin-top: 250px;
+  }
+  section.menu {
+    margin-top: 190px !important;
+  }
+
+  section.menu div.kata-promosi {
+    transform: translateX(-80px);
+  }
+  section.promosi p,
+  section.chef p {
+    margin-top: 40px !important;
+  }
+  .container.order {
+    margin: 200px auto;
+  }
+  .container.order button {
+    transform: translateX(100%);
+  }
+  p.desain {
+    margin-top: 70px !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
