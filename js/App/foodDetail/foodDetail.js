@@ -6,23 +6,30 @@ let detail;
 colDesainHp.addEventListener('click',function(e){
   if(e.target.classList.contains('img-app')){
     const imgId = e.target.dataset.imgid
-    fetch('../menu.json').then(result => result.json())
-      .then(result => {
+    const xhttp = new XMLHttpRequest()
+    xhttp.onreadystatechange = function () {
+      if (this.status == 200 && this.readyState == 4) {
+        const result = JSON.parse(this.responseText)
         const semuaMenu = result.menu
         semuaMenu.forEach(Idmenu => {
-          const idmenu = Idmenu.id
-          if (imgId == idmenu) {
-            let detailLengkap = foodDetail(Idmenu)
-            rowFoodDetail.innerHTML = detailLengkap
-            const colFoodDetail = document.querySelector('.col-food-detail')
-            // ditemptakan dalam variabel lain agar button silang juga memberikan event
-            detail = colFoodDetail
-            detail.classList.add('munculkan')
-            // function yang bertugas untuk menghapus detail selain tombol silang
-            deleteDetail()
-          }
+            const idmenu = Idmenu.id
+            if (imgId == idmenu) {
+              let detailLengkap = foodDetail(Idmenu)
+              rowFoodDetail.innerHTML = detailLengkap
+              const colFoodDetail = document.querySelector('.col-food-detail')
+              // ditemptakan dalam variabel lain agar button silang juga memberikan event
+              detail = colFoodDetail
+              detail.classList.add('munculkan')
+              // function yang bertugas untuk menghapus detail selain tombol silang
+              deleteDetail()
+              
+            }
         });
-    })
+      }
+      
+    }
+    xhttp.open('GET', '../menu.json', true)
+    xhttp.send()
   }
   
 })

@@ -1,17 +1,22 @@
 const kategori = document.querySelectorAll('.kategori div')
 const rowMenu = document.querySelector('.row-menu')
 function allMenu() {
-    fetch('menu.json').then(result => result.json())
-    .then(result => {
-        const semuaMenu = result.menu
-        let barisMenu = ''
-        semuaMenu.forEach(menu => {
-            barisMenu += daftarMakanan(menu)  
-        })
-        rowMenu.innerHTML = barisMenu
-        const hr = document.querySelectorAll('.hr-menu')
-        hr[hr.length - 1].style.display = 'none'
-    })
+    const xhttp = new XMLHttpRequest()
+    xhttp.onreadystatechange = function () {
+        if (this.status == 200 && this.readyState == 4) {
+            const result = JSON.parse(this.responseText)
+            const semuaMenu = result.menu
+            let barisMenu = ''
+            semuaMenu.forEach(menu => {
+                barisMenu += daftarMakanan(menu)  
+            })
+            rowMenu.innerHTML = barisMenu
+            const hr = document.querySelectorAll('.hr-menu')
+            hr[hr.length - 1].style.display = 'none'
+        }
+    }
+    xhttp.open('GET', 'menu.json', true)
+    xhttp.send()
 }
 allMenu()
  
@@ -55,24 +60,25 @@ kategori.forEach(kat => {
             allMenu()
             return
         }
-        fetch('menu.json').then(result => result.json())
-        .then(result => {
-            const semuaMenu = result.menu
-            let content = ''
-            semuaMenu.forEach(menu => {
-                const kategori = menu.kategori
-                if (namaKategori == kategori) {
-                    content += daftarMakanan(menu)
-                }
-                rowMenu.innerHTML = content
-            })
-        })
+        const xhr = new XMLHttpRequest()
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                const result = JSON.parse(this.responseText)
+                const semuaMenu = result.menu
+                let content = ''
+                semuaMenu.forEach(menu => {
+                    const kategori = menu.kategori
+                    if (namaKategori == kategori) {
+                        content += daftarMakanan(menu)
+                    }
+                    rowMenu.innerHTML = content
+                })
+            }
+        }
+        xhr.open('GET', 'menu.json', true)
+        xhr.send()
     })
 })
-
-// ketika user berpindah ke halaman keranjang
-// 
-
 
 
 
