@@ -28,7 +28,7 @@ colDesainHp.addEventListener('click',function(e){
       }
       
     }
-    xhttp.open('GET', '../menu.json', true)
+    xhttp.open('GET', 'menu.json', true)
     xhttp.send()
   }
   
