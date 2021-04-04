@@ -1,19 +1,19 @@
 /* section.banner .col-lg-6:nth-child(1) {
    overflow: hidden;
 } */
-h2.hello {
+section.banner .baris-banner {
   overflow: hidden;
 }
 h2.hello::after {
   content: "";
   display: block;
   width: 100%;
-  height: 80%;
+  height: 95%;
   background: #f8f8f8;
   position: absolute;
   left: 0;
   z-index: 5;
-  animation: animate 3s ease-in-out;
+  animation: animate 4s ease-in-out;
   animation-fill-mode: forwards;
 }
 @keyframes animate {
@@ -21,6 +21,12 @@ h2.hello::after {
     top: 0px;
   }
   100% {
-    top: -700px;
+    top: 700px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .baris-banner {
+    height: 250px;
   }
 }
