@@ -1,10 +1,7 @@
-body {
-  overflow-x: hidden !important;
-}
 .fade-up {
   transform: translateY(120px);
   opacity: 0;
-  transition: 0.9s ease-out;
+  transition: 0.9s;
 }
 .up {
   transform: translateY(0px);
@@ -14,18 +11,20 @@ body {
 .fade-right {
   transform: translateX(100px);
   opacity: 0;
-  transition: 0.9s ease-in-out;
+  transition: 0.9s;
 }
 .right {
   transform: translateX(0);
   opacity: 1;
+  transition: 0.9s;
 }
 .fade-left {
   transform: translateX(-100px);
   opacity: 0;
-  transition: 0.9s ease-in-out;
+  transition: 0.9s;
 }
 .left {
   transform: translateX(0);
   opacity: 1;
+   transition: 0.9s;
 }
