@@ -3,7 +3,7 @@
     {
       "id":1,
       "nama": "Mixed Salad",
-      "harga": "24.00",
+      "harga": "20.00",
       "kategori": "salads",
       "gambar": "img/salad3.png",
       "deskripsi":" Lorem ipsum dolor sit amet consectetur adipisicing. "
@@ -19,7 +19,7 @@
     {
       "id":3,
       "nama": "Avocado & Vegetables",
-      "harga": "24.00",
+      "harga": "19.00",
       "kategori": "healthy food",
       "gambar": "img/salad2-removebg.png",
       "deskripsi":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis."
@@ -27,7 +27,7 @@
     {
       "id":4,
       "nama": "Bayam Ungu",
-      "harga": "24.00",
+      "harga": "21.00",
       "kategori": "healthy food",
       "gambar": "img/salad1.png",
       "deskripsi":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt aspernatur adipisci?"
