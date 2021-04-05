@@ -125,7 +125,7 @@ section.aplikasi div.hamburger span:nth-child(2) {
   border-radius: 2px;
 }
 .row-menu {
-  height: 290px;
+  height: 300px;
   overflow-y: scroll !important;
   transition: 0.2s;
 }

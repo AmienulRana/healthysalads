@@ -19,7 +19,7 @@
   padding: 10px 10px 0;
   height: 85% !important;
   overflow-y: scroll;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   top: 600px;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -28,7 +28,7 @@
 }
 .col-food-detail.munculkan {
   top: 85px !important;
-  transition: 0.3s !important;
+  transition: 0.3s ease-in-out;
 }
 .col-img-detail {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
