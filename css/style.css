@@ -309,9 +309,6 @@ p.desain a {
   body h2 {
     font-size: 22px;
   }
-  .container {
-    overflow-x: hidden !important;
-  }
   p {
     font-size: 14px !important;
   }
