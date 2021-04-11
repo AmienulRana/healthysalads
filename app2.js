@@ -27,7 +27,7 @@ kategori.forEach(kat => {
         rowMenu.classList.add('aktif')
         setTimeout(() => {
             rowMenu.classList.remove('aktif')
-        }, 315)
+        }, 215)
         
         kategori.forEach(k => {
             k.classList.remove('aktif')
