@@ -23,14 +23,5 @@ scrollFade()
 window.addEventListener('scroll',scrollFade)
 
 
-// function innWidth(f,posFade) {
-//     f.forEach(fade => {
-//         fade.classList.replace(posFade,'fade-up')
-//     })
-// }
-// innWidth(fadeRight,'fade-right')
-// innWidth(fadeLeft,'fade-left')
-
-
 
 
