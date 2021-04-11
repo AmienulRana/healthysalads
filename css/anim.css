@@ -1,7 +1,4 @@
-section{
-  overflow-x:hidden;
-} 
-.fade-up {
+ .fade-up {
   transform: translateY(120px);
   opacity: 0;
   transition: 0.9s;
