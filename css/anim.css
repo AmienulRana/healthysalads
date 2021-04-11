@@ -1,6 +1,3 @@
-body {
-  overflow-x: hidden !important;
-}
 .fade-up {
   transform: translateY(120px);
   opacity: 0;

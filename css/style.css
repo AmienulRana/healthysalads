@@ -309,9 +309,6 @@ p.desain a {
   body h2 {
     font-size: 22px;
   }
-  .container {
-    overflow-x: hidden !important;
-  }
   p {
     font-size: 14px !important;
   }
@@ -323,9 +320,6 @@ p.desain a {
   }
   section.menu {
     display: block;
-  }
-  section.menu .container {
-    padding-top: 20px;
   }
   .menu-salad {
     margin: 50px auto 0;
