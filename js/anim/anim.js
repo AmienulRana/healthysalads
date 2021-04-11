@@ -3,7 +3,7 @@ const fadeRight = document.querySelectorAll('.fade-right')
 const fadeLeft = document.querySelectorAll('.fade-left')
 
 function posFade(fade, position) {
-    const winHeight = window.innerHeight / 0.9
+    const winHeight = window.innerHeight / 1.1
     fade.forEach(up => {
         const posUp = up.getBoundingClientRect().top
         if (posUp < winHeight) {

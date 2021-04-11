@@ -28,3 +28,13 @@
   opacity: 1;
   transition: 0.9s;
 }
+
+
+@media (max-width: 575.98px) {
+  section{
+    overflow-x:hidden !important;
+  }
+  section.menu .container{
+    padding-top: 30px;
+  }
+}
